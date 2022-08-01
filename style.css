@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+header{
+    margin: 2em;
+    font-size: larger;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid aqua;
+    border-radius: 15px;
+    padding: 1em;
+    background: black;
+    color: aqua;
+    text-align: center;
+}
+
+#container{
+    width: 70%;
+    height: auto;
+}
+
+#quote-container{
+    background-color: aqua;
+    height: 10em;
+    padding: 3em;
+    border: 4px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+
+#quote-container>#quote{
+    font-size: larger;
+    font-style: italic;
+    font-weight: 900;
+}
+
+#quote-container>#person{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    left: 30%; 
+    
+}
+
+#quote-container>#person::before{
+    content: '--';
+}
+
+#next-quote{
+    padding: .5em;
+    background: aqua;
+    border-radius: 5px;
+    border: white 4px solid;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    transition: .3s;
+}
+
+#next-quote:hover{
+    background: black;
+    padding: .7em; 
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background: black;
+    color: aqua;
+    text-align: center;
+}
